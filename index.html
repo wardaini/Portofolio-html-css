@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Portofolio digital kreatif dengan sentuhan neon yang memukau. Temukan karya, pengalaman, dan inovasi saya di dunia teknologi dan desain.">
+  <title>NeonPortfolio | Rasakan Estetika Digital</title>
+  <!-- stylesheet eksternal sesuai saran -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts untuk tampilan modern -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER : branding -->
+  <header class="main-header">
+    <div class="logo">
+      <span class="neon-text">✦ NEONVERSE</span>
+    </div>
+    <div class="header-tagline">
+      <p>disruptive • creative • neon pulse</p>
+    </div>
+  </header>
+
+  <!-- NAVIGASI : WAJIB anchor menuju URL profil Dicoding -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#" class="nav-home">🏠 Beranda</a></li>
+        <!-- ANCHOR WAJIB : mengarah ke profil dicoding (ganti username sesuai akun anda) -->
+        <li><a href="https://www.dicoding.com/users/wardaini/" target="_blank" rel="noopener noreferrer" class="dicoding-profile">⭐ Profil Dicoding</a></li>
+        <li><a href="#about" class="nav-scroll">Tentang</a></li>
+        <li><a href="#pendidikan" class="nav-scroll">Edukasi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN : konten utama dengan FLEXBOX (bukan float) -->
+  <main class="container-main">
+    <!-- ARTICLE : konten utama / portofolio (About, Pendidikan, Kontak + tombol aksi) -->
+    <article class="content-card">
+      <h1 class="glow-title">Hai, saya <span class="neon-yellow">Wardatul A'ani</span> <br> developer & kreator neon</h1>
+      <p class="intro-text">Membangun antarmuka dengan energi visual, presisi kode, dan sentuhan futuristik. Selamat datang di ruang digital saya.</p>
+
+      <!-- KELOMPOK BUTTON: about me, kontak, pendidikan, linkedin, github (sesuai permintaan) -->
+      <div class="button-group">
+        <a href="#about" class="btn btn-neon">💡 About Me</a>
+        <a href="#kontak" class="btn btn-neon">📬 Kontak</a>
+        <a href="#pendidikan" class="btn btn-neon">🎓 Pendidikan</a>
+        <a href="https://www.linkedin.com/in/wardatul-a-ani-a716b3319/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">🔗 LinkedIn</a>
+        <a href="https://github.com/wardaini" target="_blank" rel="noopener noreferrer" class="btn btn-github">🐙 GitHub</a>
+      </div>
+
+      <!-- SEKSI ABOUT (dengan ID untuk navigasi tombol) -->
+      <section id="about" class="section-card">
+        <h2>✦ About Me</h2>
+        <p>Mahasiswa Informatika Universitas Malikussaleh semester 6 yang memiliki minat pada Artificial Intelligence, Machine Learning, tata kelola digital, dan inovasi berbasis teknologi. Aktif mengikuti kompetisi essay, LKTI, innovation paper, dan riset nasional maupun internasional dengan fokus pada transformasi digital, ethical AI, data analysis, serta solusi teknologi untuk sektor publik dan industri. Memiliki pengalaman publikasi paper internasional pada bidang Activity & Behavior Computing serta aktif mengikuti pelatihan dan sertifikasi AI, cloud computing, machine learning, dan software development dari Dicoding dan Alibaba Cloud Academy. Memiliki kemampuan dasar pengembangan sistem menggunakan Python, Laravel, SQL, serta ketertarikan pada research, policy analysis, dan pengembangan solusi berbasis AI.</p>
+        <p>Berkolaborasi dengan startup & komunitas teknologi untuk menghadirkan experience yang tak terlupakan. Prinsip saya: <span class="highlight-neon">“Kode yang bersih, estetika yang berani.”</span></p>
+      </section>
+
+      <!-- SEKSI PENDIDIKAN -->
+      <section id="pendidikan" class="section-card">
+        <h2>⚡ Pendidikan</h2>
+        <ul class="edu-list">
+          <li><strong>🎯 Universitas Malikussaleh</strong> — S1 Informatika (2023–Sekarang) <span class="badge-neon">• IPK 3.8</span></li>
+          <li><strong>🚀 Alibaba Cloud</strong> — Prompt Engineering Fundamentals, 
+Fundamentals of RAG and Agents,
+The Large World of Language Models,
+Using Generative AI Ethically & Responsibly,
+Alibaba Cloud Platform for AI (PAI),
+Model Studio Fundamentals,
+GPU-accelerated ECS,
+Generative AI Concepts</li>
+          <li><strong>💻 Dicoding Indonesia</strong> — Belajar Machine Learning untuk Pemula,
+Belajar Dasar Data Science,
+Belajar Dasar AI,
+Belajar Dasar Structured Query Language (SQL),
+Memulai Pemrograman dengan Python,
+Belajar Dasar Cloud dan Gen AI di AWS,
+Spec-Driven Development dengan Kiro,
+Belajar Fundamental Deep Learning,
+Membangun Sistem Machine Learning,
+Belajar Dasar Pemrograman Web,
+Belajar Dasar Pemrograman JavaScript,
+Belajar Membuat Front-End Web untuk Pemula</li>
+        </ul>
+      </section>
+
+      <!-- SEKSI KONTAK (email & sosial) -->
+      <section id="kontak" class="section-card">
+        <h2>📡 Kontak & Kolaborasi</h2>
+        <div class="contact-info">
+          <div class="contact-item">📧 <a href="awardatul5@gmail.com">awardatul5@gmail.com</a></div>
+          <div class="contact-item">📱 +62 822-5913-0101</div>
+          <div class="contact-item">🌐 <a href="#" target="_blank">neonverse.space/warda</a></div>
+        </div>
+        <p class="tiny-note">💬 Siap untuk proyek menarik? Jangan ragu menghubungi saya.</p>
+      </section>
+    </article>
+
+    <!-- ASIDE : foto wajib + biodata lainnya (flexbox layout menyatu dengan main) -->
+    <aside class="profile-sidebar">
+      <div class="profile-card">
+        <!-- FOTO di dalam elemen ASIDE : WAJIB ditampilkan -->
+        <img src="image/profile.jpg" alt="Foto profil Warda" class="profile-photo">
+        <h3 class="aside-name">Wardatul A'ani</h3>
+        <p class="aside-role">✨ Creative Technologist & Front-end Architect</p>
+        <div class="biodata">
+          <div class="bio-item"><span>📍 Lokasi</span> Lhokseumawe</div>
+          <div class="bio-item"><span>🎧 Vibes</span> Synthwave / HINDIA</div>
+          <div class="bio-item"><span>⚡ Spesialisasi</span> React, Tailwind, UI/UX Neon</div>
+          <div class="bio-item"><span>🏆 Sertifikasi</span> AWS Cloud, Alibaba, Dicoding Expert</div>
+        </div>
+        <!-- sedikit sentuhan sosial di aside untuk memperkaya -->
+        <div class="aside-social">
+          <a href="https://github.com/wardaini" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙 GitHub</a>
+          <a href="https://www.linkedin.com/in/wardatul-a-ani-a716b3319/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗 LinkedIn</a>
+          <a href="https://www.dicoding.com/users/wardaini/academies" target="_blank" rel="noopener noreferrer" aria-label="Dicoding">⭐ Dicoding</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2026 NeonPortfolio — Wardatul | dibangun dengan energi <span class="neon-heart">⚡💛💚</span> dan Flexbox.</p>
+    <p class="footer-credit">#KodeBerani</p>
+  </footer>
+</body>
+</html>
